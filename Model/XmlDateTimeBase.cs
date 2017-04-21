@@ -23,7 +23,7 @@ namespace AdobeConnectSDK.Model
     public DateTime DateBegin { get; set; }
 
     [XmlElement(ElementName = "date-begin")]
-    internal string DateBeginRaw
+    public string DateBeginRaw
     {
       get { return this.DateBegin.ToString(Constants.DateFormatString, CultureInfo.InvariantCulture); }
       set { this.DateBegin = DateTime.ParseExact(value, Constants.DateFormatString, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal); }
@@ -33,7 +33,7 @@ namespace AdobeConnectSDK.Model
     public DateTime DateEnd { get; set; }
 
     [XmlElement(ElementName = "date-end")]
-    internal string DateEndRaw
+    public string DateEndRaw
     {
       get { return this.DateEnd.ToString(Constants.DateFormatString, CultureInfo.InvariantCulture); }
       set { this.DateEnd = DateTime.ParseExact(value, Constants.DateFormatString, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal); }
@@ -43,7 +43,7 @@ namespace AdobeConnectSDK.Model
     public DateTime DateModified { get; set; }
 
     [XmlElement(ElementName = "date-modified")]
-    internal string DateModifiedRaw
+    public string DateModifiedRaw
     {
       get { return this.DateModified.ToString(Constants.DateFormatString, CultureInfo.InvariantCulture); }
       set { this.DateModified = DateTime.ParseExact(value, Constants.DateFormatString, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal); }
@@ -53,7 +53,7 @@ namespace AdobeConnectSDK.Model
     public DateTime DateCreated { get; set; }
 
     [XmlElement(ElementName = "date-created")]
-    internal string DateCreatedRaw
+    public string DateCreatedRaw
     {
       get { return this.DateCreated.ToString(Constants.DateFormatString, CultureInfo.InvariantCulture); }
       set { this.DateCreated = DateTime.ParseExact(value, Constants.DateFormatString, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal); }
@@ -63,7 +63,7 @@ namespace AdobeConnectSDK.Model
     public DateTime DateClosed { get; set; }
 
     [XmlElement(ElementName = "date-closed")]
-    internal string DateClosedRaw
+    public string DateClosedRaw
     {
       get { return this.DateClosed.ToString(Constants.DateFormatString, CultureInfo.InvariantCulture); }
       set { this.DateClosed = DateTime.ParseExact(value, Constants.DateFormatString, CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal); }

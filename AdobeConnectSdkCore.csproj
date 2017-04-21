@@ -10,7 +10,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <PackageId>AdobeConnectSdkCore</PackageId>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>0.0.2</PackageVersion>
     <Authors>Dmitry Stroganov</Authors>
     <Description>.NET Core port of Adobe Connect SDK</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

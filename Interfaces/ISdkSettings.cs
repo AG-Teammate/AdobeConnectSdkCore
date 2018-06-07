@@ -11,5 +11,6 @@
     string ProxyUser { get; set; }
     string ProxyPassword { get; set; }
     string ProxyDomain { get; set; }
-  }
+    int? HttpTimeoutSeconds { get; set; }
+    }
 }

@@ -144,6 +144,8 @@ namespace AdobeConnectSDK.Extensions
         {
             using (var httpClient = new HttpClient())
             {
+                if (adobeConnectXmlApi.Settings.HttpTimeoutSeconds.HasValue)
+                    httpClient.Timeout = TimeSpan.FromSeconds(adobeConnectXmlApi.Settings.HttpTimeoutSeconds.Value);
                 var form = new MultipartFormDataContent();
                 form.Add(new ByteArrayContent(content.Data), "file", content.Name);
                 var url = string.Format("{0}/api/xml?action=sco-upload&sco-id={1}&session={2}",

@@ -21,5 +21,7 @@ namespace AdobeConnectSDK.Common
     public string NetDomain { get; set; }
 
     public bool UseSessionParam { get; set; }
+
+    public int? HttpTimeoutSeconds { get; set; }
   }
 }
